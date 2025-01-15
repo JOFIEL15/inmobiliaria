@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's dimensions */
+}
+
+body {
+    font-family: 'Dancing Script', cursive;       
+    scrollbar-color:black;                                               
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courgette&display=swap');
+
+p{
+    font-family: 'Courgette', cursive}
+
+.hero-section {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.277)), url(img/i1.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 650px; /* ajusta la altura según sea necesario */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+html{
+    scroll-behavior: smooth;
+   
+}
+
+.about-section {
+    padding: 50px 0;
+}
+
+.sold-section, .selling-section {
+    padding: 50px 0;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+.animacionimg{
+    view-timeline-name:--image ;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 999; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.card-image {
+    height: 200px; /* Altura deseada para las imágenes */
+}
+
+.venta{
+   background: rgb(255, 255, 255);
+}
+
+.galeria{
+    background: linear-gradient(rgba(0, 0, 0, 0.906), rgba(0, 0, 0, 0.54)), url(img/fondo2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Esto crea el efecto de parallax */
+    height: 600px;
+   
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2.5s ease, transform 0.5s ease;
+}
+
+
+/* Clase CSS para mostrar la sección */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes count-up {
+    from {
+      transform: scale(0); /* Comienza desde la escala 0 (invisible) */
+    }
+    to {
+      transform: scale(1); /* Termina en la escala 1 (tamaño normal) */
+    }
+  }
+  
+  .count-up {
+    animation: count-up 1s ease; /* Duración y tipo de animación */
+  }
+  
+
+  /* Añadir gradiente a las imágenes */
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); /* Cambiar los valores de los colores y la opacidad según tus preferencias */
+  }
+
+  .servicios2 {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.277),rgba(0, 0, 0, 0.945)), url(img/holanda2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px; /* ajusta la altura según sea necesario */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25D366; /* Color de fondo verde de WhatsApp */
+	color:#FFFFFF; /* Color blanco para el ícono */
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #000000;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.rosario{
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.277),rgba(0, 0, 0, 0.945)), url(img/fondorosario.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px; /* ajusta la altura según sea necesario */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+
+/* cambiar color de ws añadir boton de ws a las en venta imagen de holanda*/
+/* FONDO DE ROSARIO Y LEYENDA*/
+
+/* añadir imagen de easybrokers en servicios*/
+
+/*cambiar leyenda*/
+/*casa escuinapa amarilla añadir a vendidas vendida reciente*/
+
+
+.heromzt-section {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.277)), url(img/mzt5.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 650px; /* ajusta la altura según sea necesario */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.rosario-section {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.277)), url(img/fondorosario.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 650px; /* ajusta la altura según sea necesario */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+ /* Advanced animations */
+ @keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-section {
+    animation: slideInFromLeft 1s ease;
+}
+
+/* Advanced animations */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-sectionr {
+    animation: slideInFromRight 1s ease;
+}
+
